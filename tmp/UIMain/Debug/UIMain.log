@@ -1,0 +1,14 @@
+﻿生成启动时间为 2016/12/12 15:30:07。
+     1>项目“E:\VSProject\CwyApplication\src\UIMain\UIMain.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         D:\VS2013\VC\bin\x86_amd64\CL.exe /c /I. /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtCore /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtGui /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtQml /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtQuick /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtOpenGL /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtDeclarative /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_QML_LIB /D QT_QUICK_LIB /D QT_OPENGL_LIB /D QT_DECLARATIVE_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../tmp\UIMain\Debug\\" /Fd"../../tmp\UIMain\Debug\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../bin\\UIMain.exe" /NOLOGO /LIBPATH:D:\QT5.3.2\5.3\msvc2013_64_opengl\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Qmld.lib Qt5Quickd.lib Qt5OpenGLd.lib opengl32.lib glu32.lib Qt5Declaratived.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../../bin\UIMain.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../bin\UIMain.lib" /MACHINE:X64 ../../tmp\UIMain\Debug\main.obj
+         UIMain.vcxproj -> E:\VSProject\CwyApplication\src\UIMain\../../bin\UIMain.exe
+     1>已完成生成项目“E:\VSProject\CwyApplication\src\UIMain\UIMain.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.11
