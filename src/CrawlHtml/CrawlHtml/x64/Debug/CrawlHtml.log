@@ -1,14 +1,13 @@
-﻿生成启动时间为 2016/12/14 17:00:19。
-     1>项目“E:\VSProject\CrawlHtml\CrawlHtml\CrawlHtml.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2016/12/15 16:06:31。
+     1>项目“E:\VSProject\CwyApplication\src\CrawlHtml\CrawlHtml\CrawlHtml.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\VS2013\VC\bin\x86_amd64\CL.exe /c /I. /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtNetwork /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtCore /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtGui /ID:\QT5.3.2\5.3\msvc2013_64_opengl\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
          main.cpp
-     1>e:\vsproject\crawlhtml\crawlhtml\main.cpp(54): warning C4700: 使用了未初始化的局部变量“codec”
        Link:
-         D:\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\VSProject\CrawlHtml\x64\Debug\\CrawlHtml.exe" /NOLOGO /LIBPATH:D:\QT5.3.2\5.3\msvc2013_64_opengl\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib Qt5Networkd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\VSProject\CrawlHtml\x64\Debug\CrawlHtml.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\VSProject\CrawlHtml\x64\Debug\CrawlHtml.lib" /MACHINE:X64 x64\Debug\main.obj
-         CrawlHtml.vcxproj -> E:\VSProject\CrawlHtml\x64\Debug\CrawlHtml.exe
-     1>已完成生成项目“E:\VSProject\CrawlHtml\CrawlHtml\CrawlHtml.vcxproj”(Build 个目标)的操作。
+         D:\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\VSProject\CwyApplication\src\CrawlHtml\x64\Debug\\CrawlHtml.exe" /NOLOGO /LIBPATH:D:\QT5.3.2\5.3\msvc2013_64_opengl\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib Qt5Networkd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\VSProject\CwyApplication\src\CrawlHtml\x64\Debug\CrawlHtml.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\VSProject\CwyApplication\src\CrawlHtml\x64\Debug\CrawlHtml.lib" /MACHINE:X64 x64\Debug\main.obj
+         CrawlHtml.vcxproj -> E:\VSProject\CwyApplication\src\CrawlHtml\x64\Debug\CrawlHtml.exe
+     1>已完成生成项目“E:\VSProject\CwyApplication\src\CrawlHtml\CrawlHtml\CrawlHtml.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.24
+已用时间 00:00:01.28

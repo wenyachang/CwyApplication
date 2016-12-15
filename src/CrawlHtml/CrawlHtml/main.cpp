@@ -8,23 +8,19 @@
 #include <QTextStream>
 #include <QTextCodec>
 #include <QString>       
+#include <QRegExp>
 
 //网页地址      
-const QString URLSTR = "http://wx.cclawnet.com/worldmz/%E3%80%90%E7%BE%8E%E3%80%91%E7%8E%9B%E6%A0%BC%E4%B8%BD%E7%89%B9%C2%B7%E7%B1%B3%E5%88%87%E5%B0%94%EF%BC%9A%E9%A3%98/p001.htm";
+const QString URLSTR = "http://cclawnet.com/shijiezpj/zw7/04/zw1/mydoc001.htm";
 //储存网页代码的文件      
 const QString FILE_NAME = "code.txt";
 
 int main(int argc, char *argv[])
 {
-	QTextCodec* gbk = QTextCodec::codecForName("GB18030");
-	QTextCodec::setCodecForLocale(gbk);
-	QTextCodec* code = QTextCodec::codecForLocale();
-
 	QCoreApplication app(argc, argv);
 	QUrl url(URLSTR);
 	QNetworkAccessManager manager;
 	QEventLoop loop;
-	QTextCodec *codec;
 	QNetworkReply *reply;
 
 	qDebug() << "Reading html code form " << URLSTR;
@@ -43,17 +39,33 @@ int main(int argc, char *argv[])
 	}
 	QTextStream out(&file);
 	QString codeContent = QString::fromLocal8Bit(reply->readAll());
-
-	//将获取到的网页源码写入文件  
-	//一定要注意编码问题，否则很容易出现乱码的  
-	//codec = QTextCodec::codecForHtml(reply->readAll());
-	codeContent = code->toUnicode(reply->readAll());
-
-
-
-	out.setCodec(codec);
-	out << codeContent << endl;
+	
+	out << codeContent  << endl;
 	file.close();
-	qDebug() << "Finished, the code have written to " << FILE_NAME;
+
+	QRegExp rx("<(.*)>");
+	QRegExp rx1("\\{(.*)\\}");
+	QRegExp rx2("&nbsp;");
+	QRegExp rx3("body");
+	rx.setMinimal(true);
+	rx1.setMinimal(true);
+	rx2.setMinimal(true);
+	rx3.setMinimal(true);
+	
+	codeContent.remove(rx);
+	codeContent.remove(rx1);
+	codeContent.remove(rx2);
+	codeContent.remove(rx3);
+	codeContent.remove(" ");
+	codeContent.trimmed();
+	QFile file1("result.txt");
+	if (!file1.open(QIODevice::WriteOnly | QIODevice::Text))
+	{
+		return 0;
+	}
+	QTextStream oue(&file1);
+	oue << codeContent << endl;
+	file1.close();
+
 	return 0;
 }
